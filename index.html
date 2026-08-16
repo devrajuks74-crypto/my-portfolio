@@ -1,73 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Personal Portfolio Website">
-<meta name="keywords" content="Portfolio, HTML5, CSS3">
-<meta name="author" content="Your Name">
-<title>Home</title>
 
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Personal portfolio website of a Computer Science Engineering student">
+
+    <meta name="author"
+          content="Your Name">
+
+    <title>Your Name | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1>My Portfolio</h1>
+    <!-- ================= HEADER ================= -->
 
-<nav aria-label="Main Navigation">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+    <header class="site-header">
 
-</header>
+        <div class="container header-container">
 
-<main>
+            <a href="#home" class="logo">
+                MyPortfolio
+            </a>
 
-<section>
+            <nav class="main-navigation"
+                 aria-label="Main navigation">
 
-<h2>Welcome</h2>
+                <ul class="nav-list">
 
-<p>Hello! I'm Your Name.</p>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
 
-</section>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
 
-<article>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
 
-<h2>Latest Project</h2>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
 
-<p>Responsive Portfolio Website</p>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
 
-</article>
+                </ul>
 
-<aside>
+            </nav>
 
-<h3>Skills</h3>
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Toggle dark mode">
 
-<ul>
+                🌙
 
-<li>HTML</li>
+            </button>
 
-<li>CSS</li>
+        </div>
 
-<li>JavaScript</li>
+    </header>
 
-</ul>
 
-</aside>
+    <!-- ================= MAIN ================= -->
 
-</main>
+    <main>
 
-<footer>
+        <!-- ================= HERO ================= -->
 
-<p>&copy; 2026 Your Name</p>
+        <section id="home" class="hero">
 
-</footer>
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <p class="hero-subtitle">
+                        Hello, I'm
+                    </p>
+
+                    <h1>
+                        Your Name
+                    </h1>
+
+                    <h2>
+                        Computer Science Engineering Student
+                    </h2>
+
+                    <p class="hero-description">
+
+                        I am passionate about web development,
+                        programming, IoT and modern technologies.
+                        I enjoy creating responsive and
+                        user-friendly digital experiences.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects"
+                           class="btn">
+                            View Projects
+                        </a>
+
+                        <a href="#contact"
+                           class="btn btn-secondary">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <div class="profile-placeholder">
+                        <span>YN</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about"
+                 class="about-section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>Get to know me</p>
+
+                    <h2>About Me</h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <article class="about-card">
+
+                        <h3>Who I Am</h3>
+
+                        <p>
+
+                            I am a Computer Science Engineering
+                            student interested in software development,
+                            web technologies and emerging technologies.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-card">
+
+                        <h3>My Goal</h3>
+
+                        <p>
+
+                            My goal is to continuously improve my
+                            technical skills and develop innovative
+                            solutions to real-world problems.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="about-card">
+
+                        <h3>My Interests</h3>
+
+                        <p>
+
+                            Web development, IoT, artificial intelligence,
+                            programming and responsive UI design.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills"
+                 class="skills-section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>What I work with</p>
+
+                    <h2>My Skills</h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <span>01</span>
+                        <h3>HTML5</h3>
+                        <p>Semantic and accessible web structure.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <span>02</span>
+                        <h3>CSS3</h3>
+                        <p>Responsive layouts and modern styling.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <span>03</span>
+                        <h3>JavaScript</h3>
+                        <p>Interactive and dynamic web applications.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <span>04</span>
+                        <h3>Python</h3>
+                        <p>Programming and problem solving.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <span>05</span>
+                        <h3>C Programming</h3>
+                        <p>Fundamentals and algorithm development.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <span>06</span>
+                        <h3>IoT</h3>
+                        <p>Connected devices and embedded systems.</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects"
+                 class="projects-section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>What I've built</p>
+
+                    <h2>My Projects</h2>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                Smart Irrigation System
+                            </h3>
+
+                            <p>
+
+                                An IoT-based irrigation system that
+                                monitors soil moisture and automatically
+                                controls water supply.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>ESP32</span>
+                                <span>IoT</span>
+                                <span>Blynk</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                Personal Portfolio
+                            </h3>
+
+                            <p>
+
+                                A responsive portfolio website built
+                                using modern HTML5 and CSS3 techniques.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                Smart Energy Meter
+                            </h3>
+
+                            <p>
+
+                                An IoT project designed to monitor
+                                electrical parameters and energy usage.
+
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>ESP32</span>
+                                <span>IoT</span>
+                                <span>Sensors</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact"
+                 class="contact-section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <p>Let's connect</p>
+
+                    <h2>Contact Me</h2>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-info">
+
+                        <h3>
+                            Let's work together
+                        </h3>
+
+                        <p>
+
+                            If you would like to discuss a project,
+                            internship opportunity or collaboration,
+                            feel free to contact me.
+
+                        </p>
+
+
+                        <div class="contact-item">
+
+                            <strong>Email</strong>
+
+                            <a href="mailto:yourname@example.com">
+                                yourname@example.com
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <strong>Location</strong>
+
+                            <span>
+                                India
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="contact-form"
+                          action="#"
+                          method="post">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Enter subject"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Write your message"
+                                required></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn">
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                &copy; 2026 Your Name.
+                All rights reserved.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#"
+                   aria-label="GitHub">
+                    GitHub
+                </a>
+
+                <a href="#"
+                   aria-label="LinkedIn">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 
